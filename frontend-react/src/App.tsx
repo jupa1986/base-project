@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 const Gallery = lazy(async () => import('pages/Gallery'))
 const Details = lazy(async () => import('pages/Details'))
+const Login = lazy(async () => import('pages/Login'))
+
 
 export default function App(): ReactElement {
 	return (
@@ -13,6 +15,7 @@ export default function App(): ReactElement {
 				<Routes>
 					<Route path='/' element={<Gallery />} />
 					<Route path=':fruitName' element={<Details />} />
+					<Route path='/login' element={<Login />} />
 				</Routes>
 			</Suspense>
 		</BrowserRouter>
