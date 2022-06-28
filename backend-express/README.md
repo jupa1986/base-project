@@ -34,7 +34,12 @@ npm install
 ```
 ### Dev Environment
 #### Step 1
-Create the file .env.development.local configuration, similar to .env.environment.local.template file, then update the file with your own database configurations
+Create the file .env.development.local configuration, similar to .env.environment.local.template file, then update the file with your own database configurations, for example
+```
+DB_USER = postgres
+DB_PASSWORD = postgres
+DB_DATABASE = base
+```
 #### Step 2
 Execute 
 
